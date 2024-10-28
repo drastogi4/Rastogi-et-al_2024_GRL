@@ -1,0 +1,7 @@
+This folder contains the following analysis scripts:
+calc_metrics.sh is used to calculate various evaluation metrics including average precipitation, 95th percentile of precipitation, number of days with precipitation above 1 mm (WETdays) and number of days with precipitation above 25 mm (Extdays)
+metric_evaluations.ncl is used for evaluation of the metrics with respect to the dynamically downscaled ERA5 (ERA5DD) for Figures 2,S2-S4
+metric_evaluations_wrt_PRISM.ncl is used for evaluation of the metrics with respect to PRISM reference dataset for Figures S5-S8
+metric_evaluations_GCMs.ncl is used for evaluation of dynamically downscaled GCMs for Figures 4, S12-S14
+barplot.py is used to create bar plots for Figures 2, S9-S11
+scatter.py is used to create scatter plots for Figures 2 and 4
