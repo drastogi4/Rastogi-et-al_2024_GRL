@@ -1,0 +1,8 @@
+This folder contains the code to run SRCNN.
+
+code-SRCNN-MSE.py corresponds to the model that uses the mean square error (MSE) loss function (SRCNN MSE).
+code-SRCNN-MSE-EL.py corresponds to the model that uses MSE loss function and elevation data as input (SRCNN MSE-EL).
+code-SRCNN-MSE-EL-Proc.py corresponds to the model that uses MSE loss function, elevation data as input and processed low resolution input (SRCNN MSE-EL-Proc)
+code-SRCNN-EXP-EL-Proc.py is same as code-SRCNN-MSE-EL-Proc.py but uses exponential loss functions instead of MSE (SRCNN EXP-EL-Proc).
+code-SRCNN-QT-EL-Proc.py is same as code-SRCNN-MSE-EL-Proc.py but uses quantile loss functions instead of MSE (SRCNN QT1-EL-Proc, when quantile value is set to 0.7). The quantile value can be changed to 0.2 and 0.9 for SRCNN QT0.2-EL-Proc and SRCNN QT0.9-EL-Proc.
+These code utilize 30 years (1980–2009) of data from ERA5 and dynamically downcaled ERA5 (ERA5 DD). In order to train the model for fewer years, the code can be modified to read fewer years of data. Similarly, for training the models for different resolutions, the input data needs to be changed accordingly.
